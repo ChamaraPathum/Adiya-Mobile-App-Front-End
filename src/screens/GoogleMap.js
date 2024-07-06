@@ -31,11 +31,11 @@ const GoogleMap = () => {
       (error) => Alert.alert(error.message)
     );
     fetch(
-      `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${
-        currentPosition ? currentPosition.latitude : ""
-      },${
-        currentPosition ? currentPosition.longitude : ""
-      }&radius=1000&type=restaurant&key=AIzaSyD-BpBRBkBgayvMQ8Cn04qu-5-5jtgsupI`
+      // `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${
+      //   currentPosition ? currentPosition.latitude : ""
+      // },${
+      //   currentPosition ? currentPosition.longitude : ""
+      // }&radius=1000&type=restaurant&key=AIzaSyD-BpBRBkBgayvMQ8Cn04qu-5-5jtgsupI`
     )
       .then((response) => response.json())
       .then((data) => {
