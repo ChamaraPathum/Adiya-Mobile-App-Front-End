@@ -93,7 +93,7 @@ const GoogleMap = () => {
             console.log(data, details);
           }}
           query={{
-            key: "AIzaSyAjusSunIayCE9QjGg-bOGxRsGVXGlV2i8",
+            key: "",
             language: "en",
           }}
         />
